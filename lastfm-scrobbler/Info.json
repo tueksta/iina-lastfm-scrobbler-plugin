@@ -1,7 +1,9 @@
 {
   "name": "last.fm Scrobbler",
   "identifier": "io.github.tueksta.iina-lastfm",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "ghRepo": "tueksta/iina-lastfm-scrobbler-plugin",
+  "ghVersion": 1,
   "description": "Scrobble music that you play in IINA to last.fm",
   "author": {
     "name": "Andreas Beer",

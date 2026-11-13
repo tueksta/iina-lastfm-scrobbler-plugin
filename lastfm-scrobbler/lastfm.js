@@ -1,7 +1,7 @@
 const { md5 } = require("./md5.js");
 
 const API = "https://ws.audioscrobbler.com/2.0/";
-const HEADERS = { "User-Agent": "iina-lastfm/0.1.0" };
+const HEADERS = { "User-Agent": "iina-lastfm/0.1.1" };
 
 // last.fm signature: sort params by name, concat name+value (excluding `format`/`callback`), append secret, md5.
 function sign(params, secret) {
