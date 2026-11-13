@@ -1,0 +1,29 @@
+{
+  "name": "last.fm Scrobbler",
+  "identifier": "io.github.tueksta.iina-lastfm",
+  "version": "0.1.0",
+  "description": "Scrobble music that you play in IINA to last.fm",
+  "author": {
+    "name": "Andreas Beer",
+    "url": "https://github.com/tueksta"
+  },
+  "entry": "index.js",
+  "permissions": [
+    "network-request",
+    "show-osd"
+  ],
+  "allowedDomains": [
+    "ws.audioscrobbler.com"
+  ],
+  "preferencesPage": "pref.html",
+  "preferenceDefaults": {
+    "api_key": "",
+    "api_secret": "",
+    "session_key": "",
+    "pending_token": "",
+    "now_playing": true,
+    "queue": "[]",
+    "debug_logging": false,
+    "show_osd": true
+  }
+}

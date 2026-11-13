@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+  <div class="pref-section">
+    <p class="primary">
+      Setting up authorization with last.fm (only needed once)
+    </p>
+    <p class="small secondary pref-help">
+      Step 1: Create an API account at http://last.fm/api/account/create to get a key and shared secret.
+    </p>
+    </br>
+    <p class="small secondary pref-help">
+      Step 2: Enter the values here
+    </p>
+    </br>
+    API key:
+    <div style="margin-top: 2px">
+      <input type="text" data-pref-key="api_key" style="width: 100%" />
+    </div>
+  </div>
+  <div class="pref-section">
+    Shared secret:
+    <div style="margin-top: 2px">
+      <input type="text" data-pref-key="api_secret" style="width: 100%" />
+    </div>
+    <p class="small secondary pref-help">
+      Step 3: Close this window, go to the menubar of IINA and select "Plugin" → "last.fm Scrobbler" → "Start authorization…"
+    </p>
+    </br>
+    <p class="small secondary pref-help">
+      Step 4: Approve the request on the last.fm page in your browser (this can be rejected again via last.fm settings at any time)
+    </p>
+    </br>
+    <p class="small secondary pref-help">
+      Step 5: In IINA select "Plugin" → "last.fm Scrobbler" → "…finish authorization".
+    </p>
+    </br>
+  </div>
+    <p class="primary">
+      Regular settings:
+    </p>
+  <div class="pref-section">
+    <label>
+      <input type="checkbox" data-type="bool" data-pref-key="now_playing" />
+      Send the current song playing to last.fm even before it is scrobbled after 50% playtime
+    </label>
+  </div>
+  <div class="pref-section">
+    <label>
+      <input type="checkbox" data-type="bool" data-pref-key="show_osd" />
+      Show an on-screen message when a track has been scrobbled to last.fm
+    </label>
+  </div>
+  <div class="pref-section">
+    <label>
+      <input type="checkbox" data-type="bool" data-pref-key="debug_logging" />
+      Verbose logging (to make debugging easier)
+    </label>
+  </div>
+</body>
+</html>
